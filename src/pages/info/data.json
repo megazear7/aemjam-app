@@ -1,5 +1,6 @@
 {
   "title": "Info",
+  "aemPath": "/content/dam/aemjam/info",
   "orison": {
     "order": 100
   }
