@@ -4,6 +4,7 @@
   "description": "An example Orison project setup for GitHub pages.",
   "main": "orison.js",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "orison": "^1.0.0"
   },
   "devDependencies": {},
