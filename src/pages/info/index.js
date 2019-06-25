@@ -1,7 +1,13 @@
-import { html } from 'orison';
+import { html, unsafeHTML } from 'orison';
+import { getContentFragment } from '../../aem/aem.js';
 
-export default context => html`
-  <section>
-    <h2>${context.data.title}</h2>
-  <section>
-`;
+export default async context => {
+  const cfPage = await getContentFragment(context.data.aemPath)
+
+  return html`
+    <section>
+      <h2>About page</h2>
+      <div>${unsafeHTML(cfPage.body)}<div>
+    <section>
+  `;
+};
