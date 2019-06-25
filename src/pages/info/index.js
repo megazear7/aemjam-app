@@ -6,7 +6,7 @@ export default async context => {
 
   return html`
     <section>
-      <h2>About page</h2>
+      <h2>Info page</h2>
       <div>${unsafeHTML(cfPage.body)}<div>
     <section>
   `;
