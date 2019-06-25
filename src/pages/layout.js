@@ -5,7 +5,7 @@ import footer from '../partials/footer.js';
 import { getJSON } from '../aem.js';
 
 export default async context => {
-  const cfLayout = await getJSON(context.data.aemPath);
+  const cfLayout = await getJSON(context.data.aemSitePath);
 
   return html`
     <!DOCTYPE html>
@@ -17,7 +17,9 @@ export default async context => {
         <link rel="stylesheet" type="text/css" href="/app.css">
       </head>
       <body>
-        ${header(context.root.data.title)}
+        <header>
+          <h1>${cfLayout.title}</h1>
+        </header>
         ${nav(context.path, context.root)}
         <main>
           ${context.page.html}

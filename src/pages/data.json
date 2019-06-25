@@ -1,4 +1,5 @@
 {
   "title": "I am from the root node",
-  "aemPath": "/content/dam/aemjam/home"
+  "aemPath": "/content/dam/aemjam/home",
+  "aemSitePath": "/content/dam/aemjam/example-jamstack-site"
 }
