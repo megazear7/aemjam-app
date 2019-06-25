@@ -1,5 +1,5 @@
 import { html, unsafeHTML } from 'orison';
-import { getContentFragment } from '../../aem/aem.js';
+import { getContentFragment } from '../../aem/aem-connector.js';
 
 export default async context => {
   const cfPage = await getContentFragment(context.data.aemPath)
